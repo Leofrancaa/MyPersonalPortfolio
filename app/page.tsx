@@ -180,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* Seção de Introdução */}
-      <div className="w-full bg-white px-32 py-12 text-black flex flex-col gap-4 mb-20">
+      <div className="w-full bg-white px-6 lg:px-32 py-12 text-black flex flex-col gap-4 mb-20">
         <p className="text-3xl font-bold">Hey!</p>
         <p className="text-2xl font-thin">
           I’m Leonardo Franca Almeida Silva from Brazil! <br /> I love
@@ -197,7 +197,7 @@ export default function Home() {
           <h2 className="mb-8 mt-6 text-black text-2xl font-semibold">
             My Top Projects
           </h2>
-          <div className="grid grid-cols-3 place-items-center gap-x-5 gap-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-x-5 gap-y-8">
             <Card
               img={Img2}
               title={"Arcane Vault"}

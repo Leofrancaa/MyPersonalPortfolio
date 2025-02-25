@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="relative z-40 bg-black px-32 py-8 bottom-0 w-full">
-      <section className="flex justify-between">
+      <section className="flex md:flex-row md:justify-between flex-col gap-4">
         <div className="flex flex-col gap-4">
           <p className="text-2xl">Contact me</p>
           <ul className="flex flex-col gap-1">
