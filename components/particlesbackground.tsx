@@ -27,25 +27,35 @@ const ParticlesBackground = () => {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: "#1b1b1b" },
+        color: { value: "#00004B" },
       },
       fpsLimit: 120,
       interactivity: {
+        detectsOn: "window",
         events: {
           onClick: { enable: true, mode: "push" },
-          onHover: { enable: true, mode: "grab" },
+          onHover: { enable: false, mode: "grab" },
+          resize: { enable: true, delay: 0.5 },
         },
         modes: {
-          push: { quantity: 4 },
-          grab: { distance: 150, links: { opacity: 1 } },
+          push: { quantity: 10 },
+          grab: { distance: 100, links: { opacity: 1 } },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+            factor: 100,
+            speed: 1,
+            maxSpeed: 50,
+            easing: "ease-out-quad",
+          },
         },
       },
       particles: {
         color: { value: "#ffffff" },
         links: {
           color: "#ffffff",
-          distance: 120,
-          enable: true,
+          distance: 100,
+          enable: false,
           opacity: 0.5,
           width: 1,
         },
@@ -54,22 +64,49 @@ const ParticlesBackground = () => {
           enable: true,
           outModes: { default: OutMode.out },
           random: false,
-          speed: 2,
+          speed: 0.4,
           straight: false,
         },
         number: {
-          density: { enable: true },
-          value: 120,
+          density: { enable: false, width: 1920, height: 1080 },
+          value: 300,
         },
-        opacity: { value: 0.7 },
+        opacity: {
+          value: { min: 0.1, max: 1 },
+          animation: {
+            count: 0,
+            enable: false,
+            speed: 2,
+            decay: 0,
+            delay: 0,
+            sync: false,
+            mode: "auto",
+            startValue: "random",
+            destroy: "none",
+            reduceDuplicates: false,
+          },
+        },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 2, max: 3 },
+          value: { min: 1, max: 2 },
+          animation: {
+            count: 0,
+            enable: false,
+            speed: 5,
+            decay: 0,
+            delay: 0,
+            sync: false,
+            mode: "auto",
+            startValue: "random",
+            destroy: "none",
+          },
         },
       },
       detectRetina: true,
+      pauseOnBlur: true,
+      pauseOnOutsideViewport: true,
     }),
     []
   );
@@ -85,7 +122,10 @@ const ParticlesBackground = () => {
         left: 0,
         width: "100vw",
         height: "100vh",
-        zIndex: -1, // 🔥 Garante que fique atrás de tudo
+        overflow: "hidden",
+        margin: 0,
+        padding: 0,
+        zIndex: -1,
       }}
     />
   ) : (

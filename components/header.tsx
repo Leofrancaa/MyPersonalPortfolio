@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-colors duration-300 ${
-        isScrolled || isMenuOpen ? "bg-[#1b1b1b]" : "bg-transparent"
+        isScrolled || isMenuOpen ? "bg-[#00004B]" : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between py-4 px-4 md:py-6 md:px-12">
@@ -73,7 +73,7 @@ export default function Header() {
 
         {/* Menu para mobile */}
         <div
-          className={`md:hidden fixed top-16 left-0 w-full h-full bg-[#1b1b1b] transition-transform duration-300 transform ${
+          className={`md:hidden fixed top-16 left-0 w-full h-full bg-[#00004B] transition-transform duration-300 transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
