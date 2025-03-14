@@ -15,7 +15,7 @@ const timelineItem = tv({
 });
 
 const timelineCard = tv({
-  base: "w-[44vw] max-w-full p-6 bg-white rounded-lg shadow-lg relative z-30 transition-all duration-300 origin-top",
+  base: "lg:w-[44vw] md:[90vw] w-[80vw] max-w-full p-6 bg-white rounded-lg shadow-lg relative z-30 transition-all duration-300 origin-top",
 });
 
 interface TimelineItemProps extends ComponentProps<"div"> {
@@ -59,7 +59,11 @@ export const TimelineItem = ({
       <div
         className={`${timelineCard()} mt-4 cursor-pointer ${
           isHovered ? "scale-y-105 pb-8" : ""
-        } ${position === "left" ? "left-16" : "right-16"}`}
+        } ${
+          position === "left"
+            ? "lg:left-10 mx-auto lg:mx-0 xl:left-16"
+            : "lg:right-10 mx-auto lg:mx-0 xl:right-16"
+        }`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setIsExpanded(!isExpanded)}
@@ -88,9 +92,12 @@ export const TimelineItem = ({
         <h4 className="text-xs md:text-sm font-semibold text-gray-600 mb-4">
           {subtitle}
         </h4>
-        <p className="text-gray-600 text-justify text-sm md:text-base leading-relaxed">
+        <p className="text-gray-600 text-justify text-sm md:text-base leading-relaxed mb-4">
           {content}
         </p>
+        <span className="text-gray-700 text-base font-medium lg:hidden">
+          {date}
+        </span>
 
         {/* Área de imagens no clique */}
         {isExpanded && images.length > 0 && (
