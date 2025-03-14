@@ -47,13 +47,14 @@ export default function PersonalCard() {
 
   return (
     <div className="flex flex-col gap-8 items-center justify-center w-full h-[100vh]">
-      <Image
-        src={fotoPerfil}
-        width={100}
-        height={100}
-        alt="Foto de perfil"
-        className="rounded-full"
-      />
+      <div className="md:w-40 md:h-40 w-32 h-32 relative">
+        <Image
+          src={fotoPerfil}
+          fill
+          alt="Foto de perfil"
+          className="rounded-full object-cntain"
+        />
+      </div>
       <p className="text-4xl md:text-[60px] text-center">Leonardo Franca</p>
       <p className="md:text-4xl text-xl">Student & Developer</p>
       <ul className="flex gap-4 mt-4">
