@@ -28,6 +28,7 @@ interface CardProps {
   img: StaticImageData;
   title: string;
   text: string;
+  link: string;
 }
 
 // Para usar o customColor, basta passar o componente desta forma: <Card color="red" /> {/* Usa a cor vermelha definida no Tailwind */}
@@ -40,6 +41,7 @@ export default function Card({
   img,
   title,
   text,
+  link,
 }: CardProps) {
   return (
     <div
@@ -58,10 +60,11 @@ export default function Card({
 
         <button className="relative flex self-start text-white font-medium transition-all duration-300 hover:text-gray-200 mt-8">
           <a
-            href=""
-            className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            href={link}
+            target="_blank"
+            className="uppercase relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
           >
-            VISIT WEBSITE
+            see at github
           </a>
         </button>
       </div>

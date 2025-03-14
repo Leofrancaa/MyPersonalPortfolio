@@ -54,8 +54,8 @@ export default function PersonalCard() {
         alt="Foto de perfil"
         className="rounded-full"
       />
-      <p className="text-[60px] text-center">Leonardo Franca</p>
-      <p className="text-4xl">Student & Developer</p>
+      <p className="text-4xl md:text-[60px] text-center">Leonardo Franca</p>
+      <p className="md:text-4xl text-xl">Student & Developer</p>
       <ul className="flex gap-4 mt-4">
         {socialLinks.map(({ id, url, icon, tooltip }) => (
           <li key={id} className="relative">
