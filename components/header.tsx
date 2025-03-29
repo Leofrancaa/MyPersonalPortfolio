@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-colors duration-300 ${
-        isScrolled || isMenuOpen ? "bg-[#00004B]" : "bg-transparent"
+        isScrolled || isMenuOpen ? "bg-[#000033]" : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between py-4 px-4 md:py-6 md:px-12">

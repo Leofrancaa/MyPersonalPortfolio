@@ -1,7 +1,7 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="relative z-40 bg-black lg:px-32 flex flex-col justify-center py-8 bottom-0 w-full">
+    <footer className="relative z-40 bg-transparent lg:px-32 flex flex-col justify-center py-8 bottom-0 w-full">
       <section className="flex md:flex-row md:justify-between flex-col gap-4">
         <div className="flex flex-col gap-4">
           <p className="text-2xl">Contact me</p>
