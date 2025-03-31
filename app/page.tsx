@@ -7,10 +7,6 @@ import ExpandableTechCard from "../components/expandabletech";
 import Img1 from "../public/assets/img/img1.png";
 import Img2 from "../public/assets/img/img2.png";
 import Img3 from "../public/assets/img/LogoColaborae.svg";
-import Img5 from "../public/assets/img/img5.png";
-import Img6 from "../public/assets/img/img6.png";
-import Img7 from "../public/assets/img/img7.png";
-import Img8 from "../public/assets/img/img8.png";
 import Img9 from "../public/assets/img/img9.png";
 
 export default function Home() {
