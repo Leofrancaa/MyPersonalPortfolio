@@ -230,7 +230,7 @@ export default function Home() {
               img={Img9}
               title={"Omni News"}
               text={
-                "Is a strategy-based online gaming hub where players engage in competitive tactical battles. The sharp, minimalist lion head represents leadership and precision, inviting users to master their strategic skills in an elegant and immersive gaming environment."
+                "Omni News is a news website I am currently developing. It features a variety of news articles, including updates on cryptocurrency and general topics."
               }
               color="darkBlue"
               link={"https://omni-news.vercel.app/"}

@@ -90,7 +90,7 @@ export default function Header() {
   function renderNavItems(closeMenu?: () => void) {
     const items = [
       { name: "Home", href: "/" },
-      { name: "Impossible List", href: "#impossible-list" },
+      { name: "Impossible List", href: "/impossible" },
       { name: "Curriculum", href: "/curriculum" },
     ];
 
