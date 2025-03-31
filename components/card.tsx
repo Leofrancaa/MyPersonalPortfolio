@@ -28,6 +28,7 @@ interface CardProps {
   img: StaticImageData;
   title: string;
   text: string;
+  text2: string;
   link: string;
 }
 
@@ -41,6 +42,7 @@ export default function Card({
   img,
   title,
   text,
+  text2,
   link,
 }: CardProps) {
   return (
@@ -64,7 +66,7 @@ export default function Card({
             target="_blank"
             className="uppercase relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
           >
-            see at github
+            {text2}
           </a>
         </button>
       </div>

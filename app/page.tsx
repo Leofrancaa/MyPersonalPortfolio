@@ -7,11 +7,11 @@ import ExpandableTechCard from "../components/expandabletech";
 import Img1 from "../public/assets/img/img1.png";
 import Img2 from "../public/assets/img/img2.png";
 import Img3 from "../public/assets/img/LogoColaborae.svg";
-import Img4 from "../public/assets/img/img4.png";
 import Img5 from "../public/assets/img/img5.png";
 import Img6 from "../public/assets/img/img6.png";
 import Img7 from "../public/assets/img/img7.png";
 import Img8 from "../public/assets/img/img8.png";
+import Img9 from "../public/assets/img/img9.png";
 
 export default function Home() {
   const techStack = [
@@ -208,6 +208,7 @@ export default function Home() {
               }
               color="red"
               link={"https://github.com/Leofrancaa/Website_about_COD.git"}
+              text2={"see at github"}
             />
             <Card
               img={Img1}
@@ -217,6 +218,7 @@ export default function Home() {
               }
               color="blue"
               link={"https://github.com/Leofrancaa/ProjetoAed.git"}
+              text2={"see at github"}
             />
             <Card
               img={Img3}
@@ -225,52 +227,18 @@ export default function Home() {
                 "Colaboraê is a company that offers an event space in Salvador. The platform was developed to manage and promote events, providing users with an easy way to view upcoming events, and connect with the community."
               }
               color="grey"
-              link={"https://github.com/Leofrancaa/colaborae.git"}
+              link={"https://colaborae.vercel.app/"}
+              text2={"See the website"}
             />
             <Card
-              img={Img4}
-              title={"Royal Tactics"}
+              img={Img9}
+              title={"Omni News"}
               text={
                 "Is a strategy-based online gaming hub where players engage in competitive tactical battles. The sharp, minimalist lion head represents leadership and precision, inviting users to master their strategic skills in an elegant and immersive gaming environment."
               }
               color="darkBlue"
-              link={""}
-            />
-            <Card
-              img={Img5}
-              title={"Lunar Howl"}
-              text={
-                "A forum and community for night explorers, nature lovers, and outdoor enthusiasts. LunarHowl connects adventurers, offers survival tips, and allows users to share their experiences under the moonlight."
-              }
-              color="grey"
-              link={""}
-            />
-            <Card
-              img={Img6}
-              title={"Phoenix Rise"}
-              text={
-                "A platform for courses and mentorship focused on personal and professional development. PhoenixRise helps individuals 'rise from the ashes' in their careers and lives, offering content on leadership, productivity, and fresh starts."
-              }
-              color="blue"
-              link={""}
-            />
-            <Card
-              img={Img7}
-              title={"Royal Sphere"}
-              text={
-                "An exclusive portal for entrepreneurs and business leaders. RoyalSphere provides articles, networking opportunities, and tools for those looking to make a bold impact in the corporate world with vision and determination."
-              }
-              color="grey"
-              link={""}
-            />
-            <Card
-              img={Img8}
-              title={"Tech Core"}
-              text={
-                "A tech hub for developers, engineers, and innovation enthusiasts. TechCore offers tutorials, articles, and forums covering artificial intelligence, programming, and cybersecurity."
-              }
-              color="red"
-              link={""}
+              link={"https://omni-news.vercel.app/"}
+              text2={"see the website"}
             />
           </div>
         </div>
